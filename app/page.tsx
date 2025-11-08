@@ -74,7 +74,7 @@ export default function Home() {
           viewport={{ once: true }}
           className="text-2xl md:text-3xl italic text-center text-gray-300 max-w-3xl mx-auto border-l-4 border-blue-500 pl-6"
         >
-          School is one thing. Education is another. The two don't always overlap.
+          School is one thing. Education is another. The two don&apos;t always overlap.
         </motion.blockquote>
       </section>
 

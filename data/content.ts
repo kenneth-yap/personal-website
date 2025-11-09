@@ -139,12 +139,12 @@ export const achievements = [
       { 
         title: "Tsinghua University Global Summer School", 
         description: "Most Investable Team Award",
-        icon: "🚀"
+        icon: "🇨🇳"
       },
       {
       title: "Summer Undergraduate Research Programme (SURP)", 
       description: "Funded by Chinese University of Hong Kong and Worldwide Universities Network",
-      icon: "🚀"
+      icon: "🇭🇰"
     },
     ]
   },

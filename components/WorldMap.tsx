@@ -57,8 +57,8 @@ export default function WorldMap() {
         style={{ width: '100%', height: 'auto' }}
       >
         <Geographies geography={geoUrl}>
-          {({ geographies }) =>
-            geographies.map((geo) => {
+        {({ geographies }: { geographies: any[] })  =>
+            geographies.map((geo: any) => {
               const isVisited = visitedCountries.includes(geo.id);
               
               return (

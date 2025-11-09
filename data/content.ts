@@ -4,22 +4,29 @@ export const education = [
     year: "2024 - 2028",
     degree: "Doctor of Philosophy (PhD) in Engineering",
     institution: "University of Cambridge",
-    details: "EPSRC Future Infrastructure & Built Environment CDT | IfM & DIAL",
-    highlights: "Full EPSRC Scholarship | MRes Distinction"
+    details: "Cyber-Physical Systems",
+    highlights: "Full-ride EPSRC CDT Scholarship | Published 2 Conference Papers"
+  },
+  {
+    year: "2023 - 2024",
+    degree: "Master of Research (MRes) in Future Infrastructure & Built Environment",
+    institution: "University of Cambridge",
+    details: "Computational Frozen Soil Mechanics",
+    highlights: "Full-ride EPSRC CDT Scholarship | Distinction in MRes Thesis & Mini Project"
   },
   {
     year: "2023 - 2025",
     degree: "Master of Science (MSc) in Financial Engineering",
     institution: "WorldQuant University",
-    details: "Quantitative Finance, Data Science & Algorithmic Trading",
-    highlights: "Completed Optiver Trading Academy"
+    details: "Quantitative Finance, Risk & Portfolio Management",
+    highlights: "88%, Tuition-free Admission"
   },
   {
     year: "2019 - 2023",
-    degree: "Master of Engineering (MEng)",
+    degree: "Master of Engineering (MEng) in Civil Engineering",
     institution: "Imperial College London & ETH Zürich",
-    details: "Civil and Environmental Engineering | Swiss Exchange Programme",
-    highlights: "7 Prizes & Distinctions | 2× Dean's List (Top 10%)"
+    details: "Geotechnical & Transportation Engineering | Swiss-European Mobility Programme",
+    highlights: "First Class Honours | 7 Prizes/Distinctions"
   },
 ];
 
@@ -30,27 +37,27 @@ export const achievements = [
     items: [
       { 
         title: "Osborne Reynolds & Leonard Manns Travel Award", 
-        description: "Queens' College, Cambridge - Conference presentation funding",
+        description: "Awarded by Queens' College, Cambridge, to present my research abroad.",
         icon: "💰"
       },
       { 
         title: "Associate Fellowship of Higher Education Academy (AFHEA)", 
-        description: "Professional recognition in teaching and learning",
+        description: "Professional recognition in teaching at university/higher education.",
         icon: "🎓"
       },
       { 
-        title: "8th International Conference on Coupled THMC Processes", 
-        description: "Research presentation at Geomechanics conference",
+        title: "8th International Conference on Coupled THMC Processes: Geomechanics for Energy and Environmental Applications", 
+        description: "Research paper & poster",
         icon: "🌍"
       },
       { 
-        title: "SOHOMA 2025 Workshop Presenter", 
-        description: "Industry 4.0 Multi-Agent Manufacturing Systems",
+        title: "15th International Workshop on Service-Oriented, Holonic and Multi-Agent Manufacturing Systems for Industry of the Future (SOHOMA2025)", 
+        description: "Research paper & presentation",
         icon: "📊"
       },
       { 
-        title: "MSc Financial Engineering Completion", 
-        description: "WorldQuant University + Optiver Trading Academy",
+        title: "MSc in Financial Engineering", 
+        description: "88%, Completed on time",
         icon: "📈"
       },
     ]
@@ -59,20 +66,10 @@ export const achievements = [
     year: "2024",
     items: [
       { 
-        title: "MRes Distinction", 
-        description: "University of Cambridge - Infrastructure & Built Environment",
+        title: "MRes in Future Infrastructure & Built Environment", 
+        description: "Distinction in MRes Thesis & Mini Project",
         icon: "🏆"
-      },
-      { 
-        title: "National Highways Project Distinction", 
-        description: "A303 Stonehenge TBM Analysis - Industry Collaboration",
-        icon: "🚇"
-      },
-      { 
-        title: "Associateship of City & Guilds (ACGI)", 
-        description: "Professional engineering qualification",
-        icon: "⚙️"
-      },
+      }
     ]
   },
   {
@@ -80,29 +77,25 @@ export const achievements = [
     items: [
       { 
         title: "EPSRC FIBE2 CDT Studentship", 
-        description: "Full PhD scholarship at University of Cambridge",
+        description: "Full-ride scholarship at University of Cambridge",
         icon: "💰"
       },
       { 
-        title: "Imperial Award", 
-        description: "Outstanding MEng thesis with Swiss National Cooperative",
+        title: "Associateship of the City & Guilds Institute (ACGI)", 
+        description: "Honorary membership granted by Imperial College London",
+        icon: "⚙️"
+      },
+      { 
+        title: "The Imperial Award", 
+        description: "For going above and beyond academic expectations.",
         icon: "🏆"
       },
       { 
-        title: "7 Prizes & Distinctions at Graduation", 
-        description: "Imperial College London MEng",
+        title: "MEng in Civil Engineering", 
+        description: "Awarded 7 Prizes/Distinctions, including Dean's List Prize - Top 10%",
         icon: "🎖️"
-      },
-      { 
-        title: "Dean's List - Top 10%", 
-        description: "Imperial College London",
-        icon: "📚"
-      },
-      { 
-        title: "Swiss-European Mobility Scholarship", 
-        description: "Research exchange at ETH Zürich",
-        icon: "🇨🇭"
-      },
+      }
+
     ]
   },
   {
@@ -110,14 +103,24 @@ export const achievements = [
     items: [
       { 
         title: "Peter Fraenkel Prize", 
-        description: "Outstanding achievement in Civil Engineering",
+        description: "Best Group Design Project",
         icon: "🏆"
       },
       { 
         title: "UK Engineering Student of the Year", 
-        description: "National Finalist - UK Engineering Talent Awards",
+        description: "National Finalist at the Engineering Talent Awards 2022",
         icon: "🥈"
       },
+      { 
+        title: "Swiss-European Mobility Programme Scholarship", 
+        description: "To undertake research at ETH Zürich, Switzerland",
+        icon: "🇨🇭"
+      },
+      { 
+        title: "Young Entrepreneur Exchange Programme Scholarship", 
+        description: "Volunteering at Hawassa University, Ethiopia",
+        icon: "🇪🇹"
+      }
     ]
   },
   {
@@ -125,7 +128,7 @@ export const achievements = [
     items: [
       { 
         title: "Samsung Solve for Tomorrow", 
-        description: "National Finalist - Innovation Challenge",
+        description: "National Finalist - Education Category",
         icon: "💡"
       },
       { 
@@ -134,23 +137,28 @@ export const achievements = [
         icon: "⚡"
       },
       { 
-        title: "Tsinghua University Innovation Challenge", 
+        title: "Tsinghua University Global Summer School", 
         description: "Most Investable Team Award",
         icon: "🚀"
       },
+      {
+      title: "Summer Undergraduate Research Programme (SURP)", 
+      description: "Funded by Chinese University of Hong Kong and Worldwide Universities Network",
+      icon: "🚀"
+    },
     ]
   },
   {
     year: "2020",
     items: [
       { 
-        title: "ICE Emerging Engineers Award", 
-        description: "Shortlisted London-wide by Institution of Civil Engineers",
+        title: "Institution of Civil Engineers Emerging Engineers Award", 
+        description: "Top 3 Finalists London-wide",
         icon: "🌟"
       },
       { 
-        title: "Dean's List - Top 10%", 
-        description: "Imperial College London",
+        title: "Dean's List Prize", 
+        description: "Top 10% at the Department of Civil & Environmental Engineering",
         icon: "📚"
       },
     ]

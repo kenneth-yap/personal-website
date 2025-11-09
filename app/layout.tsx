@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Kenneth Yap - PhD Researcher & Data Scientist",
-  description: "Portfolio of Hoong Hao (Kenneth) Yap - Doctoral Scholar at Cambridge specializing in infrastructure, tunneling, and data science",
-  keywords: ["Kenneth Yap", "PhD", "Cambridge", "Data Science", "Civil Engineering", "Machine Learning"],
+  title: "Kenneth Yap - Researcher & Engineer",
+  description: "Portfolio of Hoong Hao (Kenneth) Yap - Doctoral Scholar at Cambridge specializing in Multi-Agent Systems & Digital Twins",
+  keywords: ["Digital Twins", "Multi-Agent Systems", "Travels", "Data Science"],
   authors: [{ name: "Kenneth Yap" }],
   openGraph: {
     title: "Kenneth Yap - Portfolio",
-    description: "PhD Researcher and Data Scientist",
+    description: "Researcher and Engineer",
     type: "website",
   },
 };

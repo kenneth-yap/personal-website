@@ -49,7 +49,8 @@ export default function Home() {
             Doctoral Scholar @ University of Cambridge
           </h2>
           <p className="text-lg text-gray-400 leading-relaxed max-w-3xl mx-auto">
-            Kenneth's research is on Inter-Organizational (B2B) Information Systems, specifically how Software Agents and Digital Twins can enable collaboration. He is affiliated with Queens&apos; College at the University of Cambridge, EPSRC Centre for Doctoral Training in 
+            Kenneth&apos;s research is on Inter-Organizational (B2B) Information Systems, specifically how Software Agents and Digital Twins can enable collaboration. 
+            He is affiliated with Queens&apos; College at the University of Cambridge, EPSRC Centre for Doctoral Training in 
             Future Infrastructure and Built Environment (FIBE2 CDT), and the Distributed Information & Automation Laboratory (DIAL)
             at the Institute for Manufacturing (IfM).
           </p>

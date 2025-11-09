@@ -3,8 +3,10 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import ProjectCard from '@/components/ProjectCard';
-import TimelineItem from '@/components/TimelineItem';
-import { projects, timeline2024, timeline2023 } from '@/data/content';
+import EducationCard from '@/components/EducationCard';
+import AwardCard from '@/components/AwardCard';
+import { projects, education, achievements } from '@/data/content';
+import AchievementYear from '@/components/AchievementYear';
 
 export default function Home() {
   return (
@@ -24,20 +26,25 @@ export default function Home() {
             Kenneth Yap
           </h1>
           <h2 className="text-xl md:text-2xl text-gray-300 mb-8">
-            Doctoral Scholar at EPSRC Centre for Doctoral Training in Future Infrastructure and Built Environment
+            Doctoral Scholar @ University of Cambridge
           </h2>
-          <p className="text-lg text-gray-400 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-lg text-gray-400 leading-relaxed max-w-3xl mx-auto mb-4">
             Kenneth holds a Master of Engineering from Imperial College London and ETH Zurich, 
-            a Master of Research from the University of Cambridge and a Master of Science from 
-            WorldQuant University. In 2028, he will graduate with a Doctor of Philosophy in 
-            Engineering from the University of Cambridge. He is awarded the Associateship of the 
-            City and Guilds Institute, and is working towards an Associate Fellowship of the 
-            Higher Education Academy.
+            Master of Research from the University of Cambridge and a Master of Science from 
+            WorldQuant University. He has been awarded the Associateship of the 
+            City and Guilds Institute and the Associate Fellowship of the 
+            Higher Education Academy. 
+           </p> 
+            
+           <p className="text-lg text-gray-400 leading-relaxed max-w-3xl mx-auto">
+            Kenneth is affiliated with Queens' College, EPSRC Centre for Doctoral Training in 
+            Future Infrastructure and Built Environment (FIBE2 CDT), and the Distributed Information & Automation Laboratory (DIAL)
+            at the Institute for Manufacturing (IfM).
           </p>
         </motion.div>
       </section>
 
-      {/* Journey Timeline */}
+{/* Education Section */}
       <section className="container mx-auto px-4 py-16">
         <motion.div
           initial={{ opacity: 0 }}
@@ -45,58 +52,71 @@ export default function Home() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl font-bold text-center mb-12">My Journey</h2>
+          <h2 className="text-4xl font-bold text-center mb-4">Education</h2>
+          <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+            Academic journey spanning civil engineering, infrastructure research, and financial engineering
+          </p>
           
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-2xl font-semibold mb-6 text-blue-400">2024</h3>
-            <div className="space-y-6 mb-12">
-              {timeline2024.map((item, index) => (
-                <TimelineItem key={index} item={item} index={index} />
-              ))}
-            </div>
-
-            <h3 className="text-2xl font-semibold mb-6 text-blue-400">2023</h3>
-            <div className="space-y-6">
-              {timeline2023.map((item, index) => (
-                <TimelineItem key={index} item={item} index={index} />
-              ))}
-            </div>
-          </div>
-        </motion.div>
-      </section>
-
-      {/* Quote Section */}
-      <section className="container mx-auto px-4 py-16">
-        <motion.blockquote
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-2xl md:text-3xl italic text-center text-gray-300 max-w-3xl mx-auto border-l-4 border-blue-500 pl-6"
-        >
-          School is one thing. Education is another. The two don&apos;t always overlap.
-        </motion.blockquote>
-      </section>
-
-      {/* Data Science Portfolio */}
-      <section className="container mx-auto px-4 py-16">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-4xl font-bold text-center mb-4">Data Science Portfolio</h2>
-          <p className="text-center text-gray-400 mb-12 text-lg">Kenneth is typing ...</p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {projects.map((project, index) => (
-              <ProjectCard key={index} project={project} index={index} />
+            {education.map((item, index) => (
+              <EducationCard key={index} item={item} index={index} />
             ))}
           </div>
         </motion.div>
       </section>
 
+ {/* Achievements Timeline Section */}
+ <section className="container mx-auto px-4 py-16">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-4xl font-bold text-center mb-4">Achievements Timeline</h2>
+          <p className="text-center text-gray-400 mb-12">
+            Six years of continuous recognition in academia, research, and innovation
+          </p>
+          
+          <div className="max-w-5xl mx-auto">
+            {achievements.map((yearData, index) => (
+              <AchievementYear 
+                key={yearData.year} 
+                year={yearData.year}
+                items={yearData.items}
+                index={index}
+              />
+            ))}
+          </div>
+
+          {/* Summary stats */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto"
+          >
+            <div className="bg-slate-800/50 rounded-lg p-4 text-center border border-slate-700/50">
+              <div className="text-3xl font-bold text-blue-400">6</div>
+              <div className="text-sm text-gray-400">Years</div>
+            </div>
+            <div className="bg-slate-800/50 rounded-lg p-4 text-center border border-slate-700/50">
+              <div className="text-3xl font-bold text-blue-400">20+</div>
+              <div className="text-sm text-gray-400">Achievements</div>
+            </div>
+            <div className="bg-slate-800/50 rounded-lg p-4 text-center border border-slate-700/50">
+              <div className="text-3xl font-bold text-blue-400">10+</div>
+              <div className="text-sm text-gray-400">Awards</div>
+            </div>
+            <div className="bg-slate-800/50 rounded-lg p-4 text-center border border-slate-700/50">
+              <div className="text-3xl font-bold text-blue-400">5</div>
+              <div className="text-sm text-gray-400">Scholarships</div>
+            </div>
+          </motion.div>
+        </motion.div>
+      </section>
+```
       {/* Footer */}
       <footer className="container mx-auto px-4 py-12 text-center text-gray-500">
         <p>&copy; {new Date().getFullYear()} Kenneth Yap. All rights reserved.</p>

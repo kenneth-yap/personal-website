@@ -1,3 +1,163 @@
+// Education Timeline
+export const education = [
+  {
+    year: "2024 - 2028",
+    degree: "Doctor of Philosophy (PhD) in Engineering",
+    institution: "University of Cambridge",
+    details: "EPSRC Future Infrastructure & Built Environment CDT | IfM & DIAL",
+    highlights: "Full EPSRC Scholarship | MRes Distinction"
+  },
+  {
+    year: "2023 - 2025",
+    degree: "Master of Science (MSc) in Financial Engineering",
+    institution: "WorldQuant University",
+    details: "Quantitative Finance, Data Science & Algorithmic Trading",
+    highlights: "Completed Optiver Trading Academy"
+  },
+  {
+    year: "2019 - 2023",
+    degree: "Master of Engineering (MEng)",
+    institution: "Imperial College London & ETH Zürich",
+    details: "Civil and Environmental Engineering | Swiss Exchange Programme",
+    highlights: "7 Prizes & Distinctions | 2× Dean's List (Top 10%)"
+  },
+];
+
+// Year-by-year achievements (reverse chronological - most recent first)
+export const achievements = [
+  {
+    year: "2025",
+    items: [
+      { 
+        title: "Osborne Reynolds & Leonard Manns Travel Award", 
+        description: "Queens' College, Cambridge - Conference presentation funding",
+        icon: "💰"
+      },
+      { 
+        title: "Associate Fellowship of Higher Education Academy (AFHEA)", 
+        description: "Professional recognition in teaching and learning",
+        icon: "🎓"
+      },
+      { 
+        title: "8th International Conference on Coupled THMC Processes", 
+        description: "Research presentation at Geomechanics conference",
+        icon: "🌍"
+      },
+      { 
+        title: "SOHOMA 2025 Workshop Presenter", 
+        description: "Industry 4.0 Multi-Agent Manufacturing Systems",
+        icon: "📊"
+      },
+      { 
+        title: "MSc Financial Engineering Completion", 
+        description: "WorldQuant University + Optiver Trading Academy",
+        icon: "📈"
+      },
+    ]
+  },
+  {
+    year: "2024",
+    items: [
+      { 
+        title: "MRes Distinction", 
+        description: "University of Cambridge - Infrastructure & Built Environment",
+        icon: "🏆"
+      },
+      { 
+        title: "National Highways Project Distinction", 
+        description: "A303 Stonehenge TBM Analysis - Industry Collaboration",
+        icon: "🚇"
+      },
+      { 
+        title: "Associateship of City & Guilds (ACGI)", 
+        description: "Professional engineering qualification",
+        icon: "⚙️"
+      },
+    ]
+  },
+  {
+    year: "2023",
+    items: [
+      { 
+        title: "EPSRC FIBE2 CDT Studentship", 
+        description: "Full PhD scholarship at University of Cambridge",
+        icon: "💰"
+      },
+      { 
+        title: "Imperial Award", 
+        description: "Outstanding MEng thesis with Swiss National Cooperative",
+        icon: "🏆"
+      },
+      { 
+        title: "7 Prizes & Distinctions at Graduation", 
+        description: "Imperial College London MEng",
+        icon: "🎖️"
+      },
+      { 
+        title: "Dean's List - Top 10%", 
+        description: "Imperial College London",
+        icon: "📚"
+      },
+      { 
+        title: "Swiss-European Mobility Scholarship", 
+        description: "Research exchange at ETH Zürich",
+        icon: "🇨🇭"
+      },
+    ]
+  },
+  {
+    year: "2022",
+    items: [
+      { 
+        title: "Peter Fraenkel Prize", 
+        description: "Outstanding achievement in Civil Engineering",
+        icon: "🏆"
+      },
+      { 
+        title: "UK Engineering Student of the Year", 
+        description: "National Finalist - UK Engineering Talent Awards",
+        icon: "🥈"
+      },
+    ]
+  },
+  {
+    year: "2021",
+    items: [
+      { 
+        title: "Samsung Solve for Tomorrow", 
+        description: "National Finalist - Innovation Challenge",
+        icon: "💡"
+      },
+      { 
+        title: "London Energy Idea Challenge", 
+        description: "Runner-up - Sustainable Energy Solutions",
+        icon: "⚡"
+      },
+      { 
+        title: "Tsinghua University Innovation Challenge", 
+        description: "Most Investable Team Award",
+        icon: "🚀"
+      },
+    ]
+  },
+  {
+    year: "2020",
+    items: [
+      { 
+        title: "ICE Emerging Engineers Award", 
+        description: "Shortlisted London-wide by Institution of Civil Engineers",
+        icon: "🌟"
+      },
+      { 
+        title: "Dean's List - Top 10%", 
+        description: "Imperial College London",
+        icon: "📚"
+      },
+    ]
+  },
+];
+
+// Keep existing projects
 export const projects = [
   {
     title: "TBM Face Stability Assessment",
@@ -60,55 +220,5 @@ export const projects = [
     image: "freight-distribution.jpg",
     technologies: "Libraries: Shapely, Geopandas, Pulp",
     link: "https://github.com/kenneth-yap/freight-distribution",
-  },
-];
-
-export const timeline2024 = [
-  {
-    month: "January",
-    content: "Joined the Cambridge Judge Business School for a Project Management course.",
-  },
-  {
-    month: "March",
-    content: "Completed the MRes group project with National Highways on TBM support pressure requirements for A303 Stonehenge. Awarded a Distinction!",
-  },
-  {
-    month: "April",
-    content: "Backpacked through Stockholm (Sweden), Copenhagen (Denmark) and Oslo (Norway).",
-  },
-  {
-    month: "September",
-    content: "Awarded a Distinction in my MRes Thesis - officially a PhD student!",
-  },
-  {
-    month: "October",
-    content: "Attended my first academic workshop at NTNU, Trondheim.",
-  },
-];
-
-export const timeline2023 = [
-  {
-    month: "July",
-    content: "A year-long exchange at ETH Zürich came to an end.",
-  },
-  {
-    month: "August",
-    content: "Backpacked across 9 countries in Eastern-Central Europe, 6 of which were new to me!",
-  },
-  {
-    month: "September",
-    content: "Went home to Malaysia for the first time in 2 years.",
-  },
-  {
-    month: "Early-October",
-    content: "Started my MRes at Cambridge and MSc at WorldQuant. Received my visa in a record-breaking 20 hours!",
-  },
-  {
-    month: "Late-October",
-    content: "Graduated from Imperial College London with 7 Prizes/Distinctions.",
-  },
-  {
-    month: "November",
-    content: "Passed my first-ever course in Finance at WorldQuant.",
   },
 ];

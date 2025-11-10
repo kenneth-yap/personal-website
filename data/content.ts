@@ -41,7 +41,7 @@ export const achievements = [
         icon: "💰"
       },
       { 
-        title: "Associate Fellowship of Higher Education Academy (AFHEA)", 
+        title: "Associate Fellowship of the Higher Education Academy (AFHEA)", 
         description: "Professional recognition in teaching at university/higher education.",
         icon: "🎓"
       },

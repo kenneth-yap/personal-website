@@ -98,11 +98,11 @@ export default function WorldMap() {
       <div className="text-center mt-4 text-gray-400 text-sm">
         <span className="inline-flex items-center mr-4">
           <span className="w-4 h-4 bg-purple-500 rounded-sm mr-2"></span>
-          Visited Countries
+          Visited
         </span>
         <span className="inline-flex items-center">
           <span className="w-4 h-4 bg-slate-800 rounded-sm mr-2"></span>
-          Not Yet Visited
+          On my way
         </span>
       </div>
     </motion.div>

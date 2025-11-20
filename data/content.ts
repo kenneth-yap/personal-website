@@ -35,6 +35,11 @@ export const achievements = [
   {
     year: "2025",
     items: [
+     { 
+        title: "Henry Royce Institute for Advanced Material Research & Innovation Research Sandpit", 
+        description: "25 candidates selected UK-wide; Competition Runner-up - £300 grant awarded",
+        icon: "⏳"
+      },
       { 
         title: "Osborne Reynolds & Leonard Manns Travel Award", 
         description: "Awarded by Queens' College, Cambridge, to present my research abroad.",

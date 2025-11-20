@@ -36,7 +36,7 @@ export const achievements = [
     year: "2025",
     items: [
      { 
-        title: "Henry Royce Institute for Advanced Material Research & Innovation Research Sandpit", 
+        title: "Henry Royce Institute for Advanced Material Research & Innovation Sandpit", 
         description: "25 candidates selected UK-wide; Competition Runner-up - £300 grant awarded",
         icon: "⏳"
       },
